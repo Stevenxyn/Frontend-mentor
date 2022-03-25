@@ -1,0 +1,135 @@
+/* Importacion de fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/*  
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+/* Formateo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Para que las dimensiones no se salgan de la caja */
+}
+
+/* Creacion de variables */
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+
+  /*Paragraphs */
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  /* Backgrounds, headings and buttons */
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+
+.container-principal {
+  width: 326px;
+  margin: 50px auto 20px;
+}
+
+article {
+  height: 445px; /*Dar altura a cada articulo*/
+  width: 100%;
+  padding: 50px; /*Me da padding a la caja por fuerita*/
+  border-radius: 10px;
+  margin: 10px;
+}
+
+img,
+h2,
+p {
+  margin-bottom: 20px;
+}
+
+#sedans {
+  background: var(--brightOrange);
+}
+
+#suvs{
+  background: var(--darkCyan);
+}
+
+#luxury{
+  background: var(--veryDarkCyan);
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  color: var(--veryLightGray);
+  font-size: 35px;
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--transparentWhite);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+button {
+  font-family: "Lexend Deca", sans-serif;
+  width: 146px;
+  border-radius: 30px;
+  padding: 15px;
+  border: 1px solid var(--veryLightGray);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#btn-sedans {
+  color: var(--brightOrange);
+}
+
+#btn-sedans:hover {
+  background-color: var(--brightOrange);
+  color: var(--veryLightGray);
+ 
+}
+
+#btn-suvs{
+  color: var(--darkCyan);
+}
+
+#btn-suvs:hover{
+  background: var(--darkCyan);
+  color: var(--veryLightGray);
+}
+
+#btn-luxury{
+  color:var(--veryDarkCyan)
+}
+
+#btn-luxury:hover{
+  background: var(--veryDarkCyan);
+  color: var(--veryLightGray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:944px){
+  .container-principal{
+    width:924px ;
+    display: flex;
+  }
+  article{
+    width: 550px;
+    height: 500px;
+  }
+  .attribution{
+    font-size: 1rem;
+  }
+}
+
+footer{
+  font-family: 'Lexend Deca', sans-serif;
+  margin-bottom: 20px;
+}
